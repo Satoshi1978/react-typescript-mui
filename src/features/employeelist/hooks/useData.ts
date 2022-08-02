@@ -19,9 +19,9 @@ const rows: Row[] = [
   { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
 ];
 
-const useData = (): { data: Row[]; loading: boolean } => {
+const useData = (isLoading: boolean): { data: Row[]; loading: boolean } => {
   const [data, setData] = useState<Row[]>(rows);
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(isLoading);
 
   useEffect(() => {
     setTimeout(() => {

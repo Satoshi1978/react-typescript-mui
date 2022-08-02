@@ -11,20 +11,20 @@ const App = () => {
   );
 };
 
-const protectedRoutes = [
+const appRoutes = [
   {
     path: '',
     element: <App />,
     children: [
       { path: '/about', element: <About /> },
       { path: '/home', element: <Employeelist /> },
+      { path: '/', element: <Employeelist /> },
       { path: '*', element: <Navigate to="." /> },
     ],
   },
 ];
 
 export const AppRoutes = () => {
-  const routes = protectedRoutes;
-  const element = useRoutes([...routes]);
+  const element = useRoutes([...appRoutes]);
   return <>{element}</>;
 };

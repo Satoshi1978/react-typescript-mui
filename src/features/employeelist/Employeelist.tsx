@@ -35,7 +35,7 @@ const columns: GridColDef[] = [
 ];
 
 const Employeelist = () => {
-  const { data, loading } = useData();
+  const { data, loading } = useData(true);
 
   return (
     <Box p={{ xs: 0, md: 2 }} sx={{ flex: 4, height: 400, width: '100%' }}>

@@ -30,11 +30,7 @@ const UserBox = styled(Box)({
   gap: '10px',
 });
 
-const Navbar = ({
-  mode,
-  onModeChange,
-  onDrawerIconClick,
-}: NavbarProps): JSX.Element => {
+const Navbar = ({ mode, onModeChange, onDrawerIconClick }: NavbarProps) => {
   return (
     <AppBar position="sticky">
       <StyledToolbar>
