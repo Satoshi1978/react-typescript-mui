@@ -40,7 +40,15 @@ const Employeelist = () => {
   return (
     <Box p={{ xs: 0, md: 2 }} sx={{ flex: 4, height: 400, width: '100%' }}>
       {loading ? (
-        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+        <Box
+          sx={{
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
           <CircularProgress />
         </Box>
       ) : (
