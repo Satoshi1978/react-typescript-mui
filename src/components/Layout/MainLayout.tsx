@@ -7,8 +7,8 @@ import {
 } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import { useState } from 'react';
-import Navbar from './Navbar';
-import Sidebar from './Sidebar';
+import Navbar from '../Navbar';
+import Sidebar from '../Sidebar';
 
 type MainLayoutProps = {
   children: React.ReactNode;
