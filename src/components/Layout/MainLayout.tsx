@@ -25,6 +25,9 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   const darkTheme = createTheme({
     palette: {
       mode: mode,
+      primary: {
+        main: '#cf8a1d',
+      },
     },
   });
 
